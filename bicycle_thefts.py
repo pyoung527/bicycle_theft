@@ -18,4 +18,14 @@ print(missing_values_count)
 
 # Data visualization
 sns.histplot(df_bicycle_thefts['Status'])
+plt.show()
+
+df_bicycle_thefts['Occurrence_Month'] = pd.Categorical(df_bicycle_thefts['Occurrence_Month'], [
+                                                       "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"])
+sns.histplot(df_bicycle_thefts['Occurrence_Month'])
+plt.show()
+
+sns.catplot(x="Status", y="Cost_of_Bike", data=df_bicycle_thefts)
+plt.show()
+
 #
