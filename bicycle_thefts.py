@@ -27,5 +27,4 @@ plt.show()
 
 sns.catplot(x="Status", y="Cost_of_Bike", data=df_bicycle_thefts)
 plt.show()
-print('hi')
 #
